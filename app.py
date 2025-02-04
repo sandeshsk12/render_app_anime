@@ -50,7 +50,7 @@ async def get():
 
 async def subscribe():
     # Replace with your actual Infura API key
-    uri = "wss://arbitrum-mainnet.infura.io/ws/v3/1707a57cddd6415e8f80ce787b35e05f"
+    uri = "wss://arbitrum-mainnet.infura.io/ws/v3/xx"
     subscription_message = {
         "jsonrpc": "2.0",
         "id": 1,
