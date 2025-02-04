@@ -35,7 +35,7 @@ async def get():
         <h1>Live Amount Claimed</h1>
         <div id="amount">Waiting for data...</div>
         <script>
-          const ws = new WebSocket("ws://" + location.host + "/ws");
+          const ws = new WebSocket("wss://" + location.host + "/ws");
           ws.onmessage = function(event) {
             const data = JSON.parse(event.data);
             document.getElementById("amount").innerText = data.amount_claimed;
